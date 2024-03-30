@@ -13,5 +13,7 @@ jobs:
       - run: pip install pipenv
       # note that we use the system python for installing at the moment
       - run: cd ./backend && pipenv install --system
-      - run: gem install license_finder
+      # install as a user to avoid the following error:
+      # You don't have write permissions for the /var/lib/gems/3.0.0 directory.
+      - run: gem install license_finder --user-install
       - run: license_finder
