@@ -1,7 +1,17 @@
 name: open-source-license-check
 
+# we had initially used
+# on:
+#  push
+# as the workflow trigger - however this resulted in runs _after_ a merge to main
+# which was not a requirement
+# we have instead copied the configuration from the documentation where
+# you can configure a workflow to run only for pull requests that target specific branches
+# https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onpull_requestpull_request_targetbranchesbranches-ignore
 on:
-  push
+  pull_request:
+    branches:
+      - main
 
 jobs:
   open-source-license-check-backend:
