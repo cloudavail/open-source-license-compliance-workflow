@@ -1,0 +1,31 @@
+---
+- - :permit
+  - MIT
+  - :who: 
+    :why: 
+    :versions: []
+    :when: 2024-03-30 19:47:17.281323000 Z
+- - :permit
+  - IDC
+  - :who: 
+    :why: 
+    :versions: []
+    :when: 2024-03-30 19:47:31.648220000 Z
+- - :permit
+  - New BSD
+  - :who: 
+    :why: 
+    :versions: []
+    :when: 2024-03-30 19:47:37.185468000 Z
+- - :permit
+  - ISC
+  - :who: 
+    :why: 
+    :versions: []
+    :when: 2024-03-30 19:47:52.501537000 Z
+- - :unpermit
+  - IDC
+  - :who: 
+    :why: 
+    :versions: []
+    :when: 2024-03-30 19:47:57.997721000 Z
