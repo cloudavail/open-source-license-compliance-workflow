@@ -1,9 +1,7 @@
 name: open-source-license-check
 
 on:
-  push:
-    branches:    
-      - main
+  push
 
 jobs:
   open-source-license-check-backend:
