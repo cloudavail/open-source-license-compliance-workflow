@@ -27,5 +27,5 @@ jobs:
       # we had previously used gem install license_finder --user-install
       # to avoid the error error: You don't have write permissions for the /var/lib/gems/3.0.0 directory.
       # but this resulted in the error: line 1: license_finder: command not found
-      - run: sudo gem install license_finder
+      - run: gem install license_finder
       - run: license_finder
