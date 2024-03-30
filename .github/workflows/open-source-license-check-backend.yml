@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: cd ./backend && pipenv install
+      - run: cd ./backend && pip install pipenv && pipenv install
       - run: gem install license_finder
       - run: license_finder
