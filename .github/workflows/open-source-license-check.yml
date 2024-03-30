@@ -21,7 +21,7 @@ jobs:
       run:
         working-directory: ./backend
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: pip install pipenv
       # note that we use the system python for installing at the moment
       - run: pipenv install --system
@@ -37,7 +37,7 @@ jobs:
       run:
         working-directory: ./frontend
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: yarn install
       - run: sudo gem install license_finder
       - run: license_finder
