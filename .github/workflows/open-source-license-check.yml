@@ -1,4 +1,4 @@
-name: open-source-license-check-backend
+name: open-source-license-check
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  open-source-license-checks:
+  open-source-license-check-backend:
     runs-on: ubuntu-latest
     defaults:
       run:
